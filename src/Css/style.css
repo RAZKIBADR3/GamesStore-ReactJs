@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Poppins , tahoma , sans-serif; 
+}
+
+body{
+    background-color: #27262C;
+    overflow-x: hidden;
+}
+
+header{
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+    justify-content:space-evenly;
+    position: fixed;
+    z-index: 10;
+    background-color: #27262C;
+}
+
+.logo{
+    width: 70px;
+    cursor: pointer;
+}
+
+.links{
+    height: 8vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 75%;
+    color: white;
+}
+
+.links span{
+    cursor:pointer;
+    font-size: 18px;
+}.links span:hover{
+    color: #0d6efd;
+}
+
+.menu{
+    display: none;
+    cursor: pointer;
+    height: 35px;
+    width: 35px;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}.menu > span{
+    width: 100%;
+    padding: 1.5px 0;
+    border-radius: 2px;
+    background-color: white;
+    transition: 0.5s background-color;
+}
+
+.cadre{
+    width: 400px;
+    transition: 0.5s transform;
+    cursor:pointer;
+}.cadre:hover{
+    transform: scale(1.08);
+}.cadre img{
+    height: 400px;
+}
+
+.shopIcon{
+    position: relative;
+}.shopIcon>span{
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    color: black;
+    background-color: white;
+    border-radius: 50%;
+    padding-bottom: 2px;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.shopCardP{
+    height: 100vh;
+    overflow-y: scroll;
+    width: 450px;
+    background-color: #1C1D21;
+    position: fixed;
+    right: 0;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    z-index: 11;
+}.closeP{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    height: 28px;
+    width: 28px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    transition: 0.5s background-color;
+}.closeP:hover{
+    background-color: rgba(255, 255, 255, 0.15);
+}.closeP > img{
+    height: 70%;
+}
+
+.closeP + div{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.shopCard{
+    margin-top: 60px;
+    width: 90%;
+}
+
+@media screen and (max-width:600px){
+    header{
+        justify-content:space-evenly;
+        height: 10vh;
+    }
+
+    .logo{
+        position: absolute;
+        left: 15px;
+    }
+
+    .menu{
+        display: flex;
+        margin-left: 22px;
+        z-index: 11;
+    }
+
+    .open .menu span{
+        background-color: black;
+    }
+
+    .open .links{
+        left: 0;
+    }
+
+    .links{
+        position: absolute;
+        left: -42%;
+        top: 0;
+        z-index: 10;
+        background-color: rgba(255, 255, 255,0.9);
+        color: black;
+        height: 100vh;
+        flex-direction: column;
+        justify-content: flex-start;
+        width: 42%;
+        transition: 0.5s left;
+    }.links span{
+        font-size: 15px;
+        width: 100%;
+        margin: 15px 0;
+    }
+}
+@media screen and (max-width:500px) {
+    .cadre{
+        width: 280px;
+    }.cadre img{
+        height: 280px;
+    }
+
+    .shopCardP{
+        width: 100%;
+        overflow-x: hidden;
+    }
+}
