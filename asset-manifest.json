@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/GamesStore-ReactJs/static/css/main.587579ba.css",
+    "main.js": "/GamesStore-ReactJs/static/js/main.742dacb5.js",
+    "index.html": "/GamesStore-ReactJs/index.html",
+    "main.587579ba.css.map": "/GamesStore-ReactJs/static/css/main.587579ba.css.map",
+    "main.742dacb5.js.map": "/GamesStore-ReactJs/static/js/main.742dacb5.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.587579ba.css",
+    "static/js/main.742dacb5.js"
+  ]
+}
